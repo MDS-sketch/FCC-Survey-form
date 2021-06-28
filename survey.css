@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root
+{
+    --color-white:rgb(0, 0, 0);
+    
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body
+{
+    
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(238, 9, 121,0.8), rgb(255, 106, 0,0.8)),url(https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    z-index: -1;
+    
+}
+
+#title
+{
+    font-family: 'Oswald', Courier, monospace;
+    text-align: center;
+    font-size: 44px;
+    margin-top: 40px ;
+    color: white;
+}
+
+#description
+{
+    font-family: 'Patrick Hand', Courier, monospace;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(189, 189, 189);
+ 
+    
+   
+}
+@media (max-width:425px)
+{
+    form 
+    {
+        max-width: 100%;
+    }
+}
+
+.container
+{
+   box-sizing: border-box;
+   margin: 3.125rem auto 0 auto;
+   width: 70% !important;
+}
+form
+{
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto 50px;
+    opacity: 0.8;
+  
+}
+
+.form-group
+{
+    font-family: 'Oswald', Courier, monospace;
+    margin: 7px auto ;
+    padding: 5px;
+    font-size: 24px ;
+    color: rgb(25, 163, 255);
+    
+    
+   
+}
+
+.form-control
+{
+    display: block;
+   background-color: #ffffff !important;
+    margin: 7px auto ;
+    width: 100% !important;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 1 !important;
+    background-clip: padding-box;
+    
+
+   
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+.input-radio,.input-checkbox
+  {
+    display: inline-block !important;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+  }
+  .input-textarea
+  {
+      width: 100%;
+      height: 150px;
+      resize: vertical;
+      border-radius: 5px;
+  }
+  .submit-button
+  {
+      width: 100%;
+      color: black;
+      background-color: white;
+      display: block;
+      padding: 6px;
+      border-radius: 8px;
+  }
